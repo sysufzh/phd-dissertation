@@ -1,0 +1,222 @@
+ Plot()
+ {
+  Outlier_Model("General",T(5),U(0,4), "t");
+  Sequence()
+  {
+   Boundary("TJG culture ends",U(-4500,-3800));
+   Sequence("Daxi culture")
+   {
+    Boundary("Daxi I begins");
+    Phase("Early Daxi culture")
+    {
+     Sequence("CTS southarea")
+     {
+      R_Date("CTS-42", 5180, 30)
+      {
+       Outlier(0.05);
+      };
+      R_Combine("CTS-10&CTS-41")
+      {
+       R_Date("CTS-10", 5440, 50);
+       R_Date("CTS-41", 5440, 50);
+       Outlier(0.05);
+      };
+      Phase("level 23")
+      {
+       Sequence("level 23" part 1)
+       {
+        R_Combine("CTS-9&CTS-40")
+        {
+         R_Date("CTS-9", 5470, 70);
+         R_Date("CTS-40", 5470, 70);
+         Outlier(0.05);
+        };
+        R_Combine("CTS-8&CTS-39")
+        {
+         R_Date("CTS-8", 5540, 60);
+         R_Date("CTS-39", 5540, 60);
+         Outlier(0.05);
+        };
+       };
+       Phase("level 23 part 2")
+       {
+        R_Combine("CTS-7&CTS-38")
+        {
+         R_Date("CTS-7", 5350, 40);
+         R_Date("CTS-38", 5350, 40);
+         Outlier(0.05);
+        };
+        R_Combine("CTS-6&CTS-37")
+        {
+         R_Date("CTS-6", 5360, 60);
+         R_Date("CTS-37", 5360, 30);
+         Outlier(0.05);
+        };
+       };
+      };
+      Phase("level 22")
+      {
+       R_Combine("CTS-5&CTS-36")
+       {
+        R_Date("CTS-5", 5450, 40);
+        R_Date("CTS-36", 5450, 40);
+        Outlier(0.05);
+       };
+       R_Combine("CTS-4&CTS-35")
+       {
+        R_Date("CTS-4", 5480, 90);
+        R_Date("CTS-35", 5480, 90);
+        Outlier(0.05);
+       };
+       R_Combine("CTS-3&CTS-34")
+       {
+        R_Date("CTS-3", 5450, 50);
+        R_Date("CTS-34", 5450, 50);
+        Outlier(0.05);
+       };
+      };
+      R_Combine("CTS-2&CTS-33")
+      {
+       R_Date("CTS-2", 5360, 60);
+       R_Date("CTS-33", 5360, 60);
+       Outlier(0.05);
+      };
+      R_Combine("CTS-1&CTS-32")
+      {
+       R_Date("CTS-1", 5370, 50);
+       R_Date("CTS-32", 5370, 50);
+       Outlier(0.05);
+      };
+     };
+     Phase("unknown context early Daxi")
+     {
+      Phase("CTS JT")
+      {
+       R_Date("CTS-15", 5480, 45)
+       {
+        Outlier(0.05);
+       };
+       R_Date("CTS-14", 5400, 45)
+       {
+        Outlier(0.05);
+       };
+       R_Date("CTS-13", 5440, 45)
+       {
+        Outlier(0.05);
+       };
+       R_Date("CTS-12", 5380, 60)
+       {
+        Outlier(0.05);
+       };
+       R_Date("CTS-11", 5350, 45)
+       {
+        Outlier(0.05);
+       };
+      };
+      Phase("CTS JT part 2")
+      {
+       R_Date("CTS-16", 5620, 60)
+       {
+        Outlier(0.05);
+       };
+       R_Date("CTS-17", 5490, 50)
+       {
+        Outlier(0.05);
+       };
+       R_Date("CTS-18", 5390, 45)
+       {
+        Outlier(0.05);
+       };
+       R_Date("CTS-19", 5220, 40)
+       {
+        Outlier(0.05);
+       };
+       R_Date("CTS-20", 5245, 55)
+       {
+        Outlier(0.05);
+       };
+       R_Date("CTS-21", 5165, 40)
+       {
+        Outlier(0.05);
+       };
+       R_Date("CTS-22", 5170, 35)
+       {
+        Outlier(0.05);
+       };
+      };
+      R_Date("CTS-29", 4830, 50)
+      {
+       Outlier(0.05);
+      };
+      Phase("CTS eastarea field")
+      {
+       R_Simulate("CTS-43", -4190, 65)
+       {
+        Outlier(0.05);
+       };
+       R_Simulate("CTS-44", -4110, 60)
+       {
+        Outlier(0.05);
+       };
+      };
+     };
+    };
+   };
+   Boundary("Daxi I ends");
+   Boundary("Daxi II begins");
+   Sequence("CTS southwest wall")
+   {
+    R_Simulate("CTS-46", -3970, 55)
+    {
+     Outlier(0.05);
+    };
+    R_Simulate("CTS-45", -3780, 50)
+    {
+     Outlier(0.05);
+    };
+    Boundary("Daxi II ends");
+    Boundary("Daxi III begins");
+    Phase("middle and late Daxi")
+    {
+     Phase("southarea level 11")
+     {
+      R_Combine("CTS-23&CTS-30")
+      {
+       R_Date("CTS-30", 4890, 70);
+       R_Date("CTS-23", 4890, 70);
+       Outlier(0.05);
+      };
+      R_Combine("CTS-24&CTS-31")
+      {
+       R_Date("CTS-31", 4900, 30);
+       R_Date("CTS-24", 4900, 30);
+       Outlier(0.05);
+      };
+     };
+     R_Date("CTS-25", 4990, 100)
+     {
+      Outlier(0.05);
+     };
+    };
+    Boundary("Daxi III ends");
+    Boundary("Daxi IV ");
+    Phase("Daxi IV")
+    {
+     R_Date("CTS-26", 4750, 100)
+     {
+      Outlier(0.05);
+     };
+     R_Date("CTS-27", 4550, 110)
+     {
+      Outlier(0.05);
+     };
+     R_Date("CTS-28", 4440, 100)
+     {
+      Outlier(0.05);
+     };
+    };
+    Boundary("Daxi IV ends");
+    Boundary("Qujialing begins" ,U(-3500,-3000));
+   };
+  };
+ };

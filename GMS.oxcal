@@ -1,0 +1,67 @@
+ Plot()
+ {
+  Outlier_Model("General",T(5),U(0,4),"t");
+  Sequence("GMS")
+  {
+   Boundary("Daxi I begins",U(-4500,-3300));
+   Sequence("Daxi I")
+   {
+    R_Date("GMS-4", 4880, 80)
+    {
+     Outlier(0.05);
+    };
+    R_Date("GMS-10", 4980, 110)
+    {
+     Outlier(0.05);
+    };
+   };
+   Boundary("Daxi I ends");
+   Boundary("Daxi II begins");
+   Phase("Daxi II")
+   {
+    R_Date("GMS-9", 5050, 250)
+    {
+     Outlier(0.05);
+    };
+    R_Date("GMS-7", 5150, 250)
+    {
+     Outlier(0.05);
+    };
+    R_Date("GMS-1", 7340, 130)
+    {
+     Outlier(0.05);
+    };
+    R_Date("GMS-2", 4610, 90)
+    {
+     Outlier(0.05);
+    };
+   };
+   Boundary("Daxi II ends");
+   Boundary("Daxi III begins");
+   Phase("Daxi III")
+   {
+    R_Date("GMS-3", 4890, 70)
+    {
+     Outlier(0.05);
+    };
+    R_Date("GMS-6", 4770, 110)
+    {
+     Outlier(0.05);
+    };
+   };
+   Boundary("Daxi III ends");
+   Boundary("Daxi IV begins");
+   Phase("Daxi IV")
+   {
+    R_Date("GMS-5", 4630, 110)
+    {
+     Outlier(0.05);
+    };
+    R_Date("GMS-8", 4550, 80)
+    {
+     Outlier(0.05);
+    };
+   };
+   Boundary("Daxi ends");
+  };
+ };

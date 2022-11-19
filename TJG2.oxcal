@@ -1,0 +1,201 @@
+ Plot()
+ {
+  Outlier_Model("General", T(5), U(0, 4), "t");
+  Sequence("model of Middle Yangtze 19.2.2020")
+  {
+   Boundary("Start");
+   KDE_Model("TJG culture")
+   {
+    Phase("Tangjiagang culture")
+    {
+     Sequence("TJG northarea")
+     {
+      R_Date("TJG-9", 5470, 35)
+      {
+       Outlier(0.05);
+      };
+      R_Date("TJG-8", 5355, 40)
+      {
+       Outlier(0.05);
+      };
+      Phase("H41 H43")
+      {
+       R_Date("TJG-16", 5520, 35)
+       {
+        Outlier(0.05);
+       };
+       R_Date("TJG-17", 5505, 35)
+       {
+        Outlier(0.05);
+       };
+      };
+      R_Date("TJG-7", 5445, 35)
+      {
+       Outlier(0.05);
+      };
+      Phase("HG1 layer2")
+      {
+       R_Date("TJG-12", 5050, 40)
+       {
+        Outlier(0.05);
+       };
+       R_Date("TJG-13", 5915, 35)
+       {
+        Outlier(0.05);
+       };
+      };
+      Phase("HG1 layer1")
+      {
+       R_Date("TJG-10", 5000, 35)
+       {
+        Outlier(0.05);
+       };
+       R_Date("TJG-11", 5080, 35)
+       {
+        Outlier(0.05);
+       };
+      };
+     };
+     Sequence("TJG southarea")
+     {
+      R_Date("TJG-24", 5165, 50)
+      {
+       Outlier(0.05);
+      };
+      R_Date("TJG-23", 5185, 35)
+      {
+       Outlier(0.05);
+      };
+      R_Date("TJG-22", 5395, 35)
+      {
+       Outlier(0.05);
+      };
+      Phase("HG2 layer2")
+      {
+       R_Date("TJG-28", 5105, 35)
+       {
+        Outlier(0.05);
+       };
+       R_Date("TJG-27", 5140, 35)
+       {
+        Outlier(0.05);
+       };
+      };
+      Phase("HG2 layer1")
+      {
+       R_Date("TJG-25", 5110, 50)
+       {
+        Outlier(0.05);
+       };
+       R_Date("TJG-26", 5060, 35)
+       {
+        Outlier(0.05);
+       };
+      };
+     };
+     Phase("TJG westarea")
+     {
+      R_Date("TJG-32", 8880, 45)
+      {
+       Outlier(0.05);
+      };
+     };
+    };
+   };
+   Boundary("Tangjiagang culture ends");
+   Boundary("Daxi I begins");
+   // KDE_Model("Daxi I")
+   // {
+   Phase("Daxi I")
+   {
+    Sequence()
+    {
+     R_Date("TJG-21", 4950, 40)
+     {
+      Outlier(0.05);
+     };
+     R_Date("TJG-20", 4970, 35)
+     {
+      Outlier(0.05);
+     };
+    };
+    Sequence()
+    {
+     R_Date("TJG-6", 5000, 40)
+     {
+      Outlier(0.05);
+     };
+     R_Date("TJG-15", 4990, 35)
+     {
+      Outlier(0.05);
+     };
+    };
+    Phase("level 5")
+    {
+     R_Date("TJG-29", 5075, 35)
+     {
+      Outlier(0.05);
+     };
+     R_Date("TJG-30", 5230, 35)
+     {
+      Outlier(0.05);
+     };
+    };
+   };
+   // };
+   Boundary("Daxi I ends");
+   Boundary("Daxi II begins");
+   // KDE_Model("Daxi II")
+   // {
+   Phase("Daxi II")
+   {
+    Sequence()
+    {
+     R_Date("TJG-19", 4935, 35)
+     {
+      Outlier(0.05);
+     };
+     R_Date("TJG-18", 4835, 35)
+     {
+      Outlier(0.05);
+     };
+    };
+    Sequence("TJG northarea")
+    {
+     R_Date("TJG-5", 5435, 50)
+     {
+      Outlier(0.05);
+     };
+     R_Date("TJG-4", 4880, 35)
+     {
+      Outlier(0.05);
+     };
+     R_Date("TJG-3", 6355, 180)
+     {
+      Outlier(0.05);
+     };
+     R_Date("TJG-2", 4875, 40)
+     {
+      Outlier(0.05);
+     };
+     R_Date("TJG-1", 4845, 40)
+     {
+      Outlier(0.05);
+     };
+    };
+    R_Date("TJG-31", 4965, 35)
+    {
+     Outlier(0.05);
+    };
+   };
+   // };
+   Boundary("Daxi II ends");
+   Boundary("Daxi III begins");
+   R_Date("TJG-14", 4580, 35)
+   {
+    Outlier(0.05);
+   };
+   Boundary("Daxi III ends");
+   Boundary("Daxi IV begins",U(-3600,-3300));
+  };
+ };
